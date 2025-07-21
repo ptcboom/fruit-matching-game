@@ -53,7 +53,7 @@ function checkMatch() {
   flipped = [];
 
   if (matched.length === cards.length) {
-    setTimeout(() => alert("ควยไรรรไอกาก 🎉"), 300);
+    setTimeout(() => alert("You win 🎉"), 300);
   }
 }
 
