@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <title>กฏการเล่นเกม</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0f172a; /* พื้นหลังเข้ม */
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .rules-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px 30px;
+      border-radius: 12px;
+      max-width: 600px;
+      opacity: 0;
+      transform: translateX(100%);
+      animation: slideIn 1.5s ease forwards;
+      text-align: center;
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    ol {
+      text-align: left;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .next-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #38bdf8;
+      color: #0f172a;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .next-btn:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+  <div class="rules-box">
+    <h2>กฏการเล่นเกม / วิธีการเล่นเกม</h2>
+    <ol>
+      <li>การจับคู่หากจับคู่ถูกจะขึ้นสีเขียว</li>
+      <li>หากจับคู่ผิด รูปภาพจะกลับไปเป็นเหมือนเดิม แล้วเริ่มจับคู่ใหม่</li>
+      <li>หากเล่นจนจบ จะมีข้อความแสดงยินดีให้กับคุณ</li>
+    </ol>
+    <a href="index.html" class="next-btn">ถัดไป</a>
+  </div>
+</body>
+</html>
